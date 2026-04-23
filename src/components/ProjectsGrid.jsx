@@ -135,7 +135,7 @@ export const ProjectsGrid = ({ setPage }) => {
       </div>
       <div style={gridStyle}>
         {filtered.map(p => (
-          <ProjectCard key={p.id} project={p} onClick={() => {}} />
+          <ProjectCard key={p.id} project={p} onClick={() => { }} />
         ))}
       </div>
     </div>

@@ -69,7 +69,7 @@ export const ProjectCard = ({ project, onClick }) => {
     fontFamily: "'Outfit', sans-serif",
     fontSize: '12px', color: hovered ? '#C8965A' : '#6B6B6B',
     marginTop: '14px', transition: 'color 150ms ease',
-    fontWeight: 500,
+    fontWeight: 500, textDecoration: 'none',
   };
 
   const prevImage = () => {
@@ -136,7 +136,7 @@ export const ProjectCard = ({ project, onClick }) => {
         <div style={stackStyle}>
           {project.stack.map(t => <span key={t} style={tagStyle}>{t}</span>)}
         </div>
-        <div style={linkStyle}>View Project →</div>
+        <a href={project.url} target='_blank' style={linkStyle}>View Project →</a>
       </div>
     </div>
   );
