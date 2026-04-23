@@ -94,7 +94,7 @@ function App() {
 
   const setPage = (p) => {
     setPageRaw(p);
-    try { localStorage.setItem('hh_page', p); } catch {}
+    try { localStorage.setItem('hh_page', p); } catch { }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -106,11 +106,11 @@ function App() {
           <FeaturedProjects setPage={setPage} />
         </>
       );
-      case 'about':     return <AboutSection setPage={setPage} />;
-      case 'expertise':  return <ExpertiseSection />;
-      case 'projects':   return <ProjectsGrid setPage={setPage} />;
-      case 'contact':    return <ContactSection />;
-      default:         return <HeroSection setPage={setPage} />;
+      case 'about': return <AboutSection setPage={setPage} />;
+      case 'expertise': return <ExpertiseSection />;
+      case 'projects': return <ProjectsGrid setPage={setPage} />;
+      case 'contact': return <ContactSection />;
+      default: return <HeroSection setPage={setPage} />;
     }
   };
 

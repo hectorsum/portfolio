@@ -12,6 +12,12 @@ const PROJECTS_BASE = [
     stack: ['React', 'TypeScript', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JWT'],
     thumbBg: '#0F1410',
     url: 'https://formatusalud.vercel.app/',
+    images: [
+      '/FormaTuSalud/FormaTuSalud.webp',
+      '/FormaTuSalud/FormaTuSalud2.webp',
+      '/FormaTuSalud/FormaTuSalud3.webp',
+      '/FormaTuSalud/FormaTuSalud4.webp',
+    ],
   },
   {
     id: 2,

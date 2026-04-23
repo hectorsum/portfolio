@@ -2,6 +2,8 @@ import React from 'react';
 
 export const ProjectCard = ({ project, onClick }) => {
   const [hovered, setHovered] = React.useState(false);
+  const [imageIdx, setImageIdx] = React.useState(0);
+  const hasImages = project.images && project.images.length > 0;
 
   const cardStyle = {
     background: '#161616',
@@ -70,13 +72,61 @@ export const ProjectCard = ({ project, onClick }) => {
     fontWeight: 500,
   };
 
+  const prevImage = () => {
+    setImageIdx((i) => (i - 1 + project.images.length) % project.images.length);
+  };
+
+  const nextImage = () => {
+    setImageIdx((i) => (i + 1) % project.images.length);
+  };
+
+  const carouselBtnStyle = {
+    position: 'absolute', top: '50%', transform: 'translateY(-50%)',
+    background: 'rgba(200,150,90,0.9)', border: 'none',
+    color: '#0D0D0D', width: '32px', height: '32px',
+    borderRadius: '4px', cursor: 'pointer', display: 'flex',
+    alignItems: 'center', justifyContent: 'center', fontSize: '16px',
+    fontWeight: 'bold', transition: 'opacity 150ms ease',
+    opacity: hovered ? 1 : 0,
+    zIndex: 2,
+  };
+
+  const carouselIndicatorStyle = {
+    position: 'absolute', bottom: '8px', left: '50%', transform: 'translateX(-50%)',
+    display: 'flex', gap: '4px', zIndex: 2,
+    opacity: hovered ? 1 : 0, transition: 'opacity 150ms ease',
+  };
+
+  const dotStyle = (active) => ({
+    width: '6px', height: '6px', borderRadius: '50%',
+    background: active ? '#C8965A' : 'rgba(240,237,230,0.3)',
+    cursor: 'pointer',
+  });
+
   return (
     <div style={cardStyle}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={onClick}>
       <div style={thumbStyle}>
-        <div style={thumbLabel}>project preview</div>
+        {hasImages ? (
+          <>
+            <img
+              src={project.images[imageIdx]}
+              alt={`${project.title} ${imageIdx + 1}`}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+            <button style={{ ...carouselBtnStyle, left: '8px' }} onClick={(e) => { e.stopPropagation(); prevImage(); }}>‹</button>
+            <button style={{ ...carouselBtnStyle, right: '8px' }} onClick={(e) => { e.stopPropagation(); nextImage(); }}>›</button>
+            <div style={carouselIndicatorStyle}>
+              {project.images.map((_, i) => (
+                <div key={i} style={dotStyle(i === imageIdx)} onClick={(e) => { e.stopPropagation(); setImageIdx(i); }}></div>
+              ))}
+            </div>
+          </>
+        ) : (
+          <div style={thumbLabel}>project preview</div>
+        )}
         <div style={thumbOverlay}></div>
       </div>
       <div style={bodyStyle}>

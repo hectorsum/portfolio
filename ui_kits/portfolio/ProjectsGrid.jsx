@@ -5,7 +5,7 @@ const PROJECTS = [
     title: 'FormaTuSalud',
     type: 'Featured',
     year: '2024',
-    description: 'HIPAA-compliant clinic management platform for independent healthcare providers — patient consultations, payments, medical history, and role-based access.',
+    description: 'HIPAA-compliant 222 clinic management platform for independent healthcare providers — patient consultations, payments, medical history, and role-based access.',
     stack: ['React', 'TypeScript', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JWT'],
     thumbBg: '#0F1410',
     url: 'https://formatusalud.vercel.app/',
@@ -117,7 +117,7 @@ const ProjectsGrid = ({ setPage }) => {
       </div>
       <div style={gridStyle}>
         {filtered.map(p => (
-          <ProjectCard key={p.id} project={p} onClick={() => {}} />
+          <ProjectCard key={p.id} project={p} onClick={() => { }} />
         ))}
       </div>
     </div>
