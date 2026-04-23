@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0D0D0D; font-family: 'Outfit', sans-serif; padding: 20px; }
+.label { font-size: 10px; color: #6B6B6B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+.shadow-row { display: flex; gap: 16px; align-items: flex-end; margin-bottom: 16px; }
+.shadow-box { background: #161616; border: 1px solid rgba(240,237,230,0.08); border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+.shadow-name { font-size: 10px; color: #6B6B6B; font-family: monospace; margin-top: 8px; text-align: center; }
+.divider { border: none; border-top: 1px solid rgba(240,237,230,0.08); margin: 12px 0; }
+.border-row { display: flex; gap: 12px; }
+.border-box { flex: 1; height: 36px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #6B6B6B; font-family: monospace; }
+</style>
+</head>
+<body>
+<div class="label">Shadow System</div>
+<div class="shadow-row">
+  <div>
+    <div class="shadow-box" style="width:64px;height:48px;box-shadow:0 2px 8px rgba(0,0,0,0.3);"></div>
+    <div class="shadow-name">--shadow-sm</div>
+  </div>
+  <div>
+    <div class="shadow-box" style="width:72px;height:56px;box-shadow:0 4px 16px rgba(0,0,0,0.35);"></div>
+    <div class="shadow-name">--shadow-md</div>
+  </div>
+  <div>
+    <div class="shadow-box" style="width:80px;height:64px;box-shadow:0 8px 32px rgba(0,0,0,0.4);"></div>
+    <div class="shadow-name">--shadow-lg</div>
+  </div>
+  <div>
+    <div class="shadow-box" style="width:88px;height:72px;box-shadow:0 16px 64px rgba(0,0,0,0.5);"></div>
+    <div class="shadow-name">--shadow-xl</div>
+  </div>
+</div>
+<hr class="divider">
+<div class="label">Border System</div>
+<div class="border-row">
+  <div class="border-box" style="border: 1px solid rgba(240,237,230,0.08);">border</div>
+  <div class="border-box" style="border: 1px solid rgba(240,237,230,0.16);">border-hover</div>
+  <div class="border-box" style="border: 2px solid #C8965A; outline: 2px solid rgba(200,150,90,0.2); outline-offset: 2px;">border-focus</div>
+</div>
+</body>
+</html>

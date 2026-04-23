@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0D0D0D; font-family: 'Outfit', sans-serif; padding: 20px; }
+.label { font-size: 10px; color: #6B6B6B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; align-items: center; }
+.divider { border: none; border-top: 1px solid rgba(240,237,230,0.08); margin: 4px 0 16px; }
+
+/* Button base */
+.btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 500;
+  letter-spacing: 0.02em; border: none; cursor: pointer;
+  padding: 10px 20px; border-radius: 4px; transition: all 150ms ease;
+  text-decoration: none;
+}
+.btn-primary {
+  background: #F0EDE6; color: #0D0D0D;
+}
+.btn-secondary {
+  background: transparent; color: #F0EDE6;
+  border: 1px solid rgba(240,237,230,0.16);
+}
+.btn-ghost {
+  background: transparent; color: #A8A49D; border: none; padding: 10px 12px;
+}
+.btn-accent {
+  background: transparent; color: #C8965A;
+  border: 1px solid rgba(200,150,90,0.3);
+}
+.btn-sm { padding: 7px 14px; font-size: 12px; }
+.btn-lg { padding: 14px 28px; font-size: 15px; }
+.btn-icon { padding: 10px; }
+.arrow { font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="label">Primary & Secondary</div>
+<div class="row">
+  <button class="btn btn-primary">View Project <span class="arrow">→</span></button>
+  <button class="btn btn-secondary">Get In Touch</button>
+  <button class="btn btn-accent">See All Work</button>
+  <button class="btn btn-ghost">About Me</button>
+</div>
+<hr class="divider">
+<div class="label">Sizes</div>
+<div class="row">
+  <button class="btn btn-primary btn-sm">Small</button>
+  <button class="btn btn-primary">Default</button>
+  <button class="btn btn-primary btn-lg">Large</button>
+</div>
+<hr class="divider">
+<div class="label">States</div>
+<div class="row">
+  <button class="btn btn-primary" style="opacity:0.4; cursor:not-allowed;">Disabled</button>
+  <button class="btn btn-secondary" style="background: rgba(240,237,230,0.06); border-color: rgba(240,237,230,0.24);">Hover</button>
+  <button class="btn btn-primary" style="transform:scale(0.98);">Pressed</button>
+  <button class="btn btn-primary" style="outline: 2px solid #C8965A; outline-offset: 3px;">Focused</button>
+</div>
+</body>
+</html>

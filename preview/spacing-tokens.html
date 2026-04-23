@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0D0D0D; font-family: 'Outfit', sans-serif; padding: 20px; }
+.label { font-size: 10px; color: #6B6B6B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px; }
+.spacing-row { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.bar-wrap { flex: 1; }
+.bar { height: 8px; background: #C8965A; border-radius: 2px; opacity: 0.7; }
+.token { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #C8965A; width: 72px; }
+.val { font-size: 10px; color: #6B6B6B; width: 36px; text-align: right; }
+.divider { border: none; border-top: 1px solid rgba(240,237,230,0.08); margin: 12px 0; }
+.radius-row { display: flex; gap: 10px; align-items: flex-end; }
+.radius-box { background: #1C1C1C; border: 1px solid rgba(240,237,230,0.12); }
+.radius-label { font-size: 10px; color: #6B6B6B; margin-top: 4px; text-align: center; font-family: monospace; }
+</style>
+</head>
+<body>
+<div class="label">Spacing Scale — 4px base</div>
+<div class="spacing-row"><div class="token">--space-1</div><div class="bar-wrap"><div class="bar" style="width:4px"></div></div><div class="val">4px</div></div>
+<div class="spacing-row"><div class="token">--space-2</div><div class="bar-wrap"><div class="bar" style="width:8px"></div></div><div class="val">8px</div></div>
+<div class="spacing-row"><div class="token">--space-3</div><div class="bar-wrap"><div class="bar" style="width:12px"></div></div><div class="val">12px</div></div>
+<div class="spacing-row"><div class="token">--space-4</div><div class="bar-wrap"><div class="bar" style="width:16px"></div></div><div class="val">16px</div></div>
+<div class="spacing-row"><div class="token">--space-6</div><div class="bar-wrap"><div class="bar" style="width:24px"></div></div><div class="val">24px</div></div>
+<div class="spacing-row"><div class="token">--space-8</div><div class="bar-wrap"><div class="bar" style="width:32px"></div></div><div class="val">32px</div></div>
+<div class="spacing-row"><div class="token">--space-12</div><div class="bar-wrap"><div class="bar" style="width:48px"></div></div><div class="val">48px</div></div>
+<div class="spacing-row"><div class="token">--space-16</div><div class="bar-wrap"><div class="bar" style="width:64px"></div></div><div class="val">64px</div></div>
+<div class="spacing-row"><div class="token">--space-24</div><div class="bar-wrap"><div class="bar" style="width:96px"></div></div><div class="val">96px</div></div>
+<hr class="divider">
+<div class="label">Border Radius</div>
+<div class="radius-row">
+  <div><div class="radius-box" style="width:32px;height:32px;border-radius:2px;"></div><div class="radius-label">2px</div></div>
+  <div><div class="radius-box" style="width:40px;height:40px;border-radius:4px;"></div><div class="radius-label">4px</div></div>
+  <div><div class="radius-box" style="width:48px;height:48px;border-radius:8px;"></div><div class="radius-label">8px</div></div>
+  <div><div class="radius-box" style="width:48px;height:24px;border-radius:9999px;"></div><div class="radius-label">full</div></div>
+</div>
+</body>
+</html>

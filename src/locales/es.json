@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "expertise": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "getInTouch": "Contáctame"
+  },
+  "hero": {
+    "title": "Construyendo productos que importan.",
+    "subtitle": "Diseño y construyo aplicaciones web de concepto a producción — código limpio, UX reflexiva e infraestructura confiable.",
+    "cta1": "Ver Mi Trabajo →",
+    "cta2": "Acerca de Mí",
+    "overline": "Full Stack Developer",
+    "scrollHint": "desplázate para explorar",
+    "stats": {
+      "experience": "años de experiencia",
+      "shipped": "productos lanzados",
+      "clients": "clientes hoteleros servidos"
+    }
+  },
+  "projects": {
+    "overline": "Trabajo seleccionado",
+    "title": "Proyectos recientes",
+    "seeAll": "Ver Todos →",
+    "projectsTitle": "Proyectos",
+    "description": "Aplicaciones full stack construidas para salud, hotelería, entrega de alimentos y artes.",
+    "filterAll": "todos",
+    "filterFeatured": "destacados",
+    "filterFreelance": "freelance"
+  },
+  "about": {
+    "overline": "Acerca de mí",
+    "title": "Construyendo cosas que escalan.",
+    "bio1": "Soy Hector Herrera, Full Stack Developer basado en Lima, Perú con 5+ años construyendo plataformas web empresariales — desde motores de reservas SaaS sirviendo a 50+ clientes hoteleros internacionales hasta sistemas de entrega de comida en tiempo real y aplicaciones sanitarias compatibles con HIPAA.",
+    "bio2": "Mi stack abarca React, TypeScript, Node.js, NestJS y Python. Me importa el pensamiento sistémico detrás de cada decisión — desde el diseño del esquema de base de datos hasta la UI pixel-perfect. Construyo cosas que escalan y me importa el oficio.",
+    "bio3": "Recientemente, también he contribuido a pipelines de entrenamiento de LLM a través de evaluación comparativa de modelos en calidad de código — uniendo ingeniería de software e IA.",
+    "skillsLabel": "Tecnologías con las que trabajo",
+    "role": "Full Stack Developer",
+    "available": "Disponible para trabajos freelance",
+    "location": "Lima, Perú (Remoto)",
+    "experience": "5+ años de experiencia",
+    "cta": "Contáctame →"
+  },
+  "projectData": {
+    "formaSalud": "Plataforma de gestión de clínica compatible con HIPAA para proveedores de atención médica independientes — consultas de pacientes, pagos, historial médico y acceso basado en roles.",
+    "harike": "Plataforma de pedidos de comida en tiempo real para cadenas de restaurantes que manejan operaciones en múltiples ubicaciones. Reducción del 35% en el tiempo de procesamiento de pedidos vía sincronización Socket.io.",
+    "dkelly": "Sistema de gestión de inventario y personal para una franquicia de helados — seguimiento de inventario en tiempo real y acceso basado en roles en 15+ ubicaciones.",
+    "revuelo": "Sitio web responsivo y CMS para una compañía teatral latinoamericana — gestión de contenido personalizable y sistema de contacto. 1,000+ visitantes mensuales."
+  },
+  "expertise": {
+    "overline": "Experiencia laboral",
+    "title": "Cronología de carrera",
+    "competencies": "Competencias principales",
+    "experiences": [
+      {
+        "company": "Upwork — Programa LBLX116",
+        "description": "Entrenamiento y evaluación de modelos de IA a través de análisis comparativo, generando rationales de retroalimentación humana sobre mejoras de código. Autor de conjuntos de instrucciones detalladas que permitieron a los modelos aprender estándares de calidad de código."
+      },
+      {
+        "company": "Reservhotel by Tambourine",
+        "description": "Ingeniero principal en una plataforma SaaS de reservas que genera ingresos para 50+ clientes hoteleros a nivel mundial. Mantuve aplicaciones web empresariales con 99,2% de tiempo de actividad e inicié iniciativas de reducción de deuda técnica."
+      },
+      {
+        "company": "Gol Manager",
+        "description": "Arquitecto y creador de la versión web responsiva de la aplicación de entrenamiento deportivo iOS/Android a partir de prototipos de Figma para componentes React pixel-perfect, alcanzando 5,000+ usuarios activos."
+      },
+      {
+        "company": "Fulltimeforce",
+        "description": "Construí aplicaciones web full-stack para clientes empresariales con enfoque en escalabilidad. Desarrollé componentes React reutilizables y hooks personalizados aumentando la eficiencia de desarrollo en un 30%."
+      }
+    ]
+  },
+  "contact": {
+    "overline": "Contacto",
+    "title": "Construyamos algo juntos.",
+    "description": "¿Tienes un proyecto en mente? Estoy disponible para trabajos freelance. Envíame un mensaje y te responderé en 24 horas.",
+    "email": "Correo",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿De qué trata el proyecto?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto, cronología y presupuesto...",
+      "send": "Enviar Mensaje →"
+    },
+    "success": {
+      "title": "¡Mensaje enviado!",
+      "description": "Gracias por comunicarte. Me pondré en contacto pronto."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Hector Herrera"
+  }
+}

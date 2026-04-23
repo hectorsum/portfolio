@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0D0D0D; font-family: 'Outfit', sans-serif; padding: 20px; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 16px; }
+.swatch { border-radius: 4px; overflow: hidden; }
+.swatch-color { height: 60px; width: 100%; }
+.swatch-info { padding: 6px 8px; background: #111; }
+.swatch-name { font-size: 11px; color: #A8A49D; letter-spacing: 0.04em; }
+.swatch-hex  { font-size: 10px; color: #6B6B6B; font-family: monospace; margin-top: 2px; }
+.section-label { font-size: 10px; color: #6B6B6B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="section-label">Backgrounds</div>
+<div class="grid">
+  <div class="swatch"><div class="swatch-color" style="background:#0D0D0D; border: 1px solid #222;"></div><div class="swatch-info"><div class="swatch-name">bg-page</div><div class="swatch-hex">#0D0D0D</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:#111111;"></div><div class="swatch-info"><div class="swatch-name">bg-surface</div><div class="swatch-hex">#111111</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:#161616;"></div><div class="swatch-info"><div class="swatch-name">bg-raised</div><div class="swatch-hex">#161616</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:#1C1C1C;"></div><div class="swatch-info"><div class="swatch-name">bg-overlay</div><div class="swatch-hex">#1C1C1C</div></div></div>
+</div>
+<div class="section-label">Foregrounds</div>
+<div class="grid">
+  <div class="swatch"><div class="swatch-color" style="background:#F0EDE6;"></div><div class="swatch-info"><div class="swatch-name">fg-primary</div><div class="swatch-hex">#F0EDE6</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:#A8A49D;"></div><div class="swatch-info"><div class="swatch-name">fg-secondary</div><div class="swatch-hex">#A8A49D</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:#6B6B6B;"></div><div class="swatch-info"><div class="swatch-name">fg-muted</div><div class="swatch-hex">#6B6B6B</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:#3A3A3A;"></div><div class="swatch-info"><div class="swatch-name">fg-faint</div><div class="swatch-hex">#3A3A3A</div></div></div>
+</div>
+<div class="section-label">Accent — Warm Amber</div>
+<div class="grid">
+  <div class="swatch"><div class="swatch-color" style="background:#C8965A;"></div><div class="swatch-info"><div class="swatch-name">accent</div><div class="swatch-hex">#C8965A</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:#DDB07E;"></div><div class="swatch-info"><div class="swatch-name">accent-light</div><div class="swatch-hex">#DDB07E</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:rgba(200,150,90,0.15); border: 1px solid #333;"></div><div class="swatch-info"><div class="swatch-name">accent-dim</div><div class="swatch-hex">rgba(200,150,90,.15)</div></div></div>
+  <div class="swatch"><div class="swatch-color" style="background:rgba(240,237,230,0.08); border: 1px solid #333;"></div><div class="swatch-info"><div class="swatch-name">border</div><div class="swatch-hex">rgba(fg, 8%)</div></div></div>
+</div>
+</body>
+</html>

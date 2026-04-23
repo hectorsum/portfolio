@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0D0D0D; font-family: 'Outfit', sans-serif; padding: 20px; }
+.label { font-size: 10px; color: #6B6B6B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.card {
+  background: #161616; border: 1px solid rgba(240,237,230,0.08);
+  border-radius: 4px; overflow: hidden;
+}
+.card-thumb {
+  width: 100%; aspect-ratio: 16/10; background: #1C1C1C;
+  display: flex; align-items: center; justify-content: center;
+}
+.card-thumb-text { font-size: 10px; color: #3A3A3A; font-family: monospace; letter-spacing: 0.04em; }
+.card-body { padding: 14px; }
+.card-tag { font-size: 10px; color: #6B6B6B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; font-weight: 500; }
+.card-title { font-family: 'DM Serif Display', serif; font-size: 18px; color: #F0EDE6; line-height: 1.2; margin-bottom: 6px; }
+.card-desc { font-size: 12px; color: #6B6B6B; line-height: 1.5; margin-bottom: 10px; }
+.card-stack { display: flex; gap: 5px; flex-wrap: wrap; }
+.stack-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #C8965A; background: rgba(200,150,90,0.08); border: 1px solid rgba(200,150,90,0.15); border-radius: 2px; padding: 2px 6px; }
+.card.hover { border-color: rgba(240,237,230,0.16); box-shadow: 0 8px 32px rgba(0,0,0,0.4); transform: translateY(-2px); }
+</style>
+</head>
+<body>
+<div class="label">Project Cards</div>
+<div class="cards">
+  <div class="card">
+    <div class="card-thumb"><div class="card-thumb-text">16:10 project image</div></div>
+    <div class="card-body">
+      <div class="card-tag">Freelance · 2024</div>
+      <div class="card-title">E-commerce Platform</div>
+      <div class="card-desc">Full stack store with payments, inventory, and analytics dashboard.</div>
+      <div class="card-stack"><span class="stack-tag">React</span><span class="stack-tag">Node</span><span class="stack-tag">Stripe</span></div>
+    </div>
+  </div>
+  <div class="card hover">
+    <div class="card-thumb" style="background:#1F1C18;"><div class="card-thumb-text">hover state</div></div>
+    <div class="card-body">
+      <div class="card-tag">Featured · 2024</div>
+      <div class="card-title">SaaS Dashboard</div>
+      <div class="card-desc">Real-time analytics with custom charting and role-based access.</div>
+      <div class="card-stack"><span class="stack-tag">Next.js</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">TypeScript</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

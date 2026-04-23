@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getInTouch": "Get In Touch"
+  },
+  "hero": {
+    "title": "Building products that matter.",
+    "subtitle": "I design and build web applications from concept to deployment — clean code, thoughtful UX, and reliable infrastructure.",
+    "cta1": "View My Work →",
+    "cta2": "About Me",
+    "overline": "Full Stack Developer",
+    "scrollHint": "scroll to explore",
+    "stats": {
+      "experience": "years experience",
+      "shipped": "products shipped",
+      "clients": "hotel clients served"
+    }
+  },
+  "projects": {
+    "overline": "Selected work",
+    "title": "Recent projects",
+    "seeAll": "See All →",
+    "projectsTitle": "Projects",
+    "description": "Full stack applications built for healthcare, hospitality, food delivery, and the arts.",
+    "filterAll": "all",
+    "filterFeatured": "featured",
+    "filterFreelance": "freelance"
+  },
+  "about": {
+    "overline": "About me",
+    "title": "Building things that scale.",
+    "bio1": "I'm Hector Herrera, a Full Stack Developer based in Lima, Perú with 5+ years building enterprise web platforms — from SaaS booking engines serving 50+ international hotel clients to real-time food delivery systems and HIPAA-compliant healthcare apps.",
+    "bio2": "My stack spans React, TypeScript, Node.js, NestJS, and Python. I care about the systems thinking behind every decision — from database schema design to pixel-perfect UI. I build things that scale and I care about the craft.",
+    "bio3": "Recently, I've also contributed to LLM training pipelines through comparative model evaluation on code quality — bridging software engineering and AI.",
+    "skillsLabel": "Tech I work with",
+    "role": "Full Stack Developer",
+    "available": "Available for freelance",
+    "location": "Lima, Perú (Remote)",
+    "experience": "5+ years experience",
+    "cta": "Get In Touch →"
+  },
+  "projectData": {
+    "formaSalud": "HIPAA-compliant clinic management platform for independent healthcare providers — patient consultations, payments, medical history, and role-based access.",
+    "harike": "Real-time food ordering platform for restaurant chains managing multi-location operations. 35% reduction in order processing time via Socket.io sync.",
+    "dkelly": "Inventory and staff management system for an ice cream franchise — real-time stock tracking and role-based access across 15+ locations.",
+    "revuelo": "Responsive website and CMS for a Latin American theater company — customizable content management and contact system. 1,000+ monthly visitors."
+  },
+  "expertise": {
+    "overline": "Work experience",
+    "title": "Career timeline",
+    "competencies": "Core competencies",
+    "experiences": [
+      {
+        "company": "Upwork — LBLX116 Program",
+        "description": "Trained and evaluated AI models through comparative analysis, generating human feedback rationales on code improvements. Authored detailed instruction sets enabling models to learn code quality standards."
+      },
+      {
+        "company": "Reservhotel by Tambourine",
+        "description": "Primary engineer on a SaaS booking platform generating revenue for 50+ hotel clients globally. Maintained enterprise web applications with 99.2% uptime and led technical debt reduction initiatives."
+      },
+      {
+        "company": "Gol Manager",
+        "description": "Architected and built responsive web version of the iOS/Android sports coaching app from Figma prototypes to pixel-perfect React components, reaching 5,000+ active users."
+      },
+      {
+        "company": "Fulltimeforce",
+        "description": "Built full-stack web applications for enterprise clients with focus on scalability. Developed reusable React components and custom hooks increasing development efficiency by 30%."
+      }
+    ]
+  },
+  "contact": {
+    "overline": "Contact",
+    "title": "Let's build something together.",
+    "description": "Have a project in mind? I'm available for freelance work. Send me a message and I'll get back to you within 24 hours.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's the project about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project, timeline, and budget...",
+      "send": "Send Message →"
+    },
+    "success": {
+      "title": "Message sent!",
+      "description": "Thanks for reaching out. I'll be in touch soon."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Hector Herrera"
+  }
+}

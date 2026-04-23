@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0D0D0D; font-family: 'Outfit', sans-serif; }
+.label { font-size: 10px; color: #6B6B6B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0; padding: 16px 24px 8px; }
+nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 24px; border-bottom: 1px solid rgba(240,237,230,0.08);
+}
+.nav-logo {
+  font-family: 'DM Serif Display', serif; font-size: 20px; color: #F0EDE6; letter-spacing: -0.01em;
+}
+.nav-logo em { color: #C8965A; font-style: italic; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-link { font-size: 13px; color: #6B6B6B; font-weight: 500; cursor: pointer; transition: color 150ms; letter-spacing: 0.01em; }
+.nav-link.active { color: #F0EDE6; }
+.nav-link:hover { color: #A8A49D; }
+.nav-cta {
+  font-size: 12px; font-weight: 500; color: #0D0D0D; background: #F0EDE6;
+  padding: 7px 16px; border-radius: 4px; cursor: pointer; font-family: 'Outfit', sans-serif;
+}
+.divider { border: none; border-top: 1px solid rgba(240,237,230,0.08); }
+nav.scrolled { background: rgba(13,13,13,0.85); backdrop-filter: blur(12px); }
+</style>
+</head>
+<body>
+<div class="label">Navigation — Default</div>
+<nav>
+  <div class="nav-logo">H.<em>H</em></div>
+  <ul class="nav-links">
+    <li class="nav-link active">Home</li>
+    <li class="nav-link">About</li>
+    <li class="nav-link">Projects</li>
+    <li class="nav-link">Contact</li>
+  </ul>
+  <div class="nav-cta">Get In Touch</div>
+</nav>
+<div class="label" style="padding-top:14px;">Navigation — Scrolled (frosted)</div>
+<nav class="scrolled">
+  <div class="nav-logo">H.<em>H</em></div>
+  <ul class="nav-links">
+    <li class="nav-link">Home</li>
+    <li class="nav-link active">Projects</li>
+    <li class="nav-link">About</li>
+    <li class="nav-link">Contact</li>
+  </ul>
+  <div class="nav-cta">Get In Touch</div>
+</nav>
+</body>
+</html>

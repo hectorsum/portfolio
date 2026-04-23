@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0D0D0D; font-family: 'Outfit', sans-serif; padding: 20px; }
+.row { display: flex; gap: 8px; margin-bottom: 16px; }
+.chip { flex: 1; border-radius: 4px; overflow: hidden; }
+.chip-color { height: 48px; }
+.chip-info { padding: 6px 8px; background: #111; }
+.chip-name { font-size: 11px; color: #A8A49D; letter-spacing: 0.04em; }
+.chip-hex { font-size: 10px; color: #6B6B6B; font-family: monospace; margin-top: 2px; }
+.label { font-size: 10px; color: #6B6B6B; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+.badges { display: flex; gap: 8px; flex-wrap: wrap; }
+.badge { padding: 4px 10px; border-radius: 2px; font-size: 11px; letter-spacing: 0.04em; font-family: 'Outfit', sans-serif; }
+</style>
+</head>
+<body>
+<div class="label">Semantic Colors</div>
+<div class="row">
+  <div class="chip"><div class="chip-color" style="background:#C84B4B;"></div><div class="chip-info"><div class="chip-name">error</div><div class="chip-hex">#C84B4B</div></div></div>
+  <div class="chip"><div class="chip-color" style="background:#4BAB72;"></div><div class="chip-info"><div class="chip-name">success</div><div class="chip-hex">#4BAB72</div></div></div>
+  <div class="chip"><div class="chip-color" style="background:#C8A94B;"></div><div class="chip-info"><div class="chip-name">warning</div><div class="chip-hex">#C8A94B</div></div></div>
+  <div class="chip"><div class="chip-color" style="background:#C8965A;"></div><div class="chip-info"><div class="chip-name">accent</div><div class="chip-hex">#C8965A</div></div></div>
+</div>
+<div class="label" style="margin-top: 4px;">In-context badges</div>
+<div class="badges">
+  <div class="badge" style="background: rgba(200,90,90,0.12); color: #E07070; border: 1px solid rgba(200,90,90,0.2);">Error</div>
+  <div class="badge" style="background: rgba(75,171,114,0.12); color: #6FC99A; border: 1px solid rgba(75,171,114,0.2);">Success</div>
+  <div class="badge" style="background: rgba(200,169,75,0.12); color: #D4BC6A; border: 1px solid rgba(200,169,75,0.2);">Warning</div>
+  <div class="badge" style="background: rgba(200,150,90,0.12); color: #C8965A; border: 1px solid rgba(200,150,90,0.2);">Featured</div>
+  <div class="badge" style="background: rgba(240,237,230,0.06); color: #A8A49D; border: 1px solid rgba(240,237,230,0.08);">Default</div>
+</div>
+</body>
+</html>
