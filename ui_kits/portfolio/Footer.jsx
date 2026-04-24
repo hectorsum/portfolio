@@ -37,12 +37,12 @@ const Footer = ({ setPage }) => {
         <ul style={linksStyle}>
           {['home', 'about', 'expertise', 'projects', 'contact'].map(p => (
             <li key={p} style={linkStyle}
-              onMouseEnter={e => e.target.style.color='#6B6B6B'}
-              onMouseLeave={e => e.target.style.color='#3A3A3A'}
+              onMouseEnter={e => e.target.style.color = '#6B6B6B'}
+              onMouseLeave={e => e.target.style.color = '#3A3A3A'}
               onClick={() => setPage(p)}>{p}</li>
           ))}
         </ul>
-        <div style={copyStyle}>© 2024 Hector Herrera</div>
+        <div style={copyStyle}>© 2026 Hector Herrera</div>
       </div>
     </footer>
   );

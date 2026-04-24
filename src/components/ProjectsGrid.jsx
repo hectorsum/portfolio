@@ -46,6 +46,14 @@ const PROJECTS_BASE = [
     stack: ['React', 'TypeScript', 'TailwindCSS', 'Node.js', 'Express', 'MongoDB'],
     thumbBg: '#110D0F',
     url: 'https://revueloarts.com',
+    images: [
+      '/RevueloArts/RevueloArts.webp',
+      '/RevueloArts/RevueloArts2.webp',
+      '/RevueloArts/RevueloArts3.webp',
+      '/RevueloArts/RevueloArts4.webp',
+      '/RevueloArts/RevueloArts5.webp',
+      '/RevueloArts/RevueloArts6.webp',
+    ],
   },
 ];
 
