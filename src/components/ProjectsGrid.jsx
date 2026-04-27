@@ -55,6 +55,22 @@ const PROJECTS_BASE = [
       '/RevueloArts/RevueloArts6.webp',
     ],
   },
+  {
+    id: 5,
+    title: 'GoLManager',
+    type: 'Freelance',
+    year: '2023',
+    descriptionKey: 'projectData.golmanager',
+    stack: ['React', 'TypeScript', 'Figma', 'React Native', 'Symfony', 'PHP'],
+    thumbBg: '#0F1208',
+    url: 'https://web.golmanager.app/',
+    images: [
+      '/GolManager/GolManager.webp',
+      '/GolManager/GolManager2.webp',
+      '/GolManager/GolManager3.webp',
+      '/GolManager/GolManager4.webp',
+    ],
+  },
 ];
 
 const FILTERS = ['all', 'featured', 'freelance'];

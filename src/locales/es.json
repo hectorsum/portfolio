@@ -47,7 +47,8 @@
     "formaSalud": "Rediseño de plataforma clínica permitiendo a pacientes agendar y pagar citas, mientras proporciona a médicos herramientas para gestionar historial de pacientes, prescripciones y horarios en tiempo real.",
     "harike": "Plataforma de pedidos de comida en tiempo real para cadenas de restaurantes que manejan operaciones en múltiples ubicaciones. Reducción del 35% en el tiempo de procesamiento de pedidos vía sincronización Socket.io.",
     "dkelly": "Sistema de gestión de inventario y personal para una franquicia de helados — seguimiento de inventario en tiempo real y acceso basado en roles en 15+ ubicaciones.",
-    "revuelo": "Sitio web responsivo y CMS para una compañía teatral latinoamericana — gestión de contenido personalizable y sistema de contacto. 1,000+ visitantes mensuales."
+    "revuelo": "Sitio web responsivo y CMS para una compañía teatral latinoamericana — gestión de contenido personalizable y sistema de contacto. 1,000+ visitantes mensuales.",
+    "golmanager": "Lideré la fase inicial de la plataforma web para una aplicación de entrenamiento deportivo, diseñando prototipos de UI/UX en Figma y estableciendo la base de React/TypeScript que permitió desarrollo paralelo en plataformas web y móviles, escalando a 5,000+ usuarios activos."
   },
   "expertise": {
     "overline": "Experiencia laboral",
