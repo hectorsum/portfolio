@@ -141,53 +141,6 @@ export const AboutSection = ({ setPage }) => {
           <div style={skillsGrid}>
             {SKILLS.map(s => <span key={s} style={skillTag}>{s}</span>)}
           </div>
-          <hr style={dividerStyle} />
-          <div style={skillsLabel}>{t('about.hobbiesLabel')}</div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-            {HOBBIES.map(h => (
-              <div key={h.label} style={{
-                display: 'flex', alignItems: 'center', gap: '8px',
-                background: '#111111', border: '1px solid rgba(240,237,230,0.08)',
-                borderRadius: '4px', padding: '10px 14px',
-              }}>
-                <span style={{ fontSize: '16px', lineHeight: 1 }}>{h.icon}</span>
-                <span style={{
-                  fontFamily: "'Outfit', sans-serif",
-                  fontSize: '13px', color: '#A8A49D',
-                }}>{h.label}</span>
-              </div>
-            ))}
-          </div>
-          <div
-            className="hobby-scroll"
-            style={{
-              display: 'flex', gap: '10px',
-              overflowX: 'auto', marginTop: '16px',
-              scrollbarWidth: 'none', msOverflowStyle: 'none',
-              WebkitOverflowScrolling: 'touch',
-            }}
-          >
-            {HOBBY_PHOTOS.map((p, i) => (
-              <div key={i} style={{ flexShrink: 0, width: '140px' }}>
-                <div style={{
-                  width: '140px', height: '190px',
-                  borderRadius: '4px', overflow: 'hidden',
-                  border: '1px solid rgba(240,237,230,0.08)',
-                  background: '#111111', marginBottom: '8px',
-                }}>
-                  <img
-                    src={p.src} alt={p.caption}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                  />
-                </div>
-                <span style={{
-                  fontFamily: "'Outfit', sans-serif",
-                  fontSize: '11px', color: '#6B6B6B',
-                  display: 'block',
-                }}>{p.caption}</span>
-              </div>
-            ))}
-          </div>
         </div>
         <div>
           <div style={sideCardStyle}>
