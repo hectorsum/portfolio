@@ -45,6 +45,10 @@ main {
   min-height: calc(100vh - 80px);
 }
 
+.hobby-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 /* Responsive typography */
 @media (max-width: 1024px) {
   html {

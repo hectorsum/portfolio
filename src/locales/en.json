@@ -37,6 +37,7 @@
     "bio2": "My stack spans React, TypeScript, Node.js, NestJS, and Python. I care about the systems thinking behind every decision — from database schema design to pixel-perfect UI. I build things that scale and I care about the craft.",
     "bio3": "Recently, I've also contributed to LLM training pipelines through comparative model evaluation on code quality — bridging software engineering and AI.",
     "skillsLabel": "Tech I work with",
+    "hobbiesLabel": "Outside of work",
     "role": "Full Stack Developer",
     "available": "Available for freelance",
     "location": "Lima, Perú (Remote)",
@@ -57,12 +58,12 @@
     "competencies": "Core competencies",
     "experiences": [
       {
-        "company": "Upwork — LBLX116 Program",
-        "description": "Trained and evaluated AI models through comparative analysis, generating human feedback rationales on code improvements. Authored detailed instruction sets enabling models to learn code quality standards."
-      },
-      {
         "company": "Reservhotel by Tambourine",
         "description": "Primary engineer on a SaaS booking platform generating revenue for 50+ hotel clients globally. Maintained enterprise web applications with 99.2% uptime and led technical debt reduction initiatives."
+      },
+      {
+        "company": "Upwork — LBLX116 Program",
+        "description": "Trained and evaluated AI models through comparative analysis, generating human feedback rationales on code improvements. Authored detailed instruction sets enabling models to learn code quality standards."
       },
       {
         "company": "Gol Manager",

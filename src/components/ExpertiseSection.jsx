@@ -3,24 +3,25 @@ import { useTranslation } from 'react-i18next';
 
 const EXPERIENCE_BASE = [
   {
-    role: 'AI Training Specialist',
-    company: 'Upwork — LBLX116 Program',
-    location: 'Remote',
-    period: 'Feb 2026 – Apr 2026',
-    type: 'Contract',
-    descriptionKey: 'expertise.experiences.0.description',
-    highlights: ['Comparative A/B model evaluation', 'Human preference feedback for LLM reasoning', 'Code quality analysis & instruction authoring'],
-    stack: ['Python', 'Model Evaluation', 'A/B Testing', 'ML Feedback Systems'],
-  },
-  {
     role: 'Full Stack Web Developer',
     company: 'Reservhotel by Tambourine',
     location: 'Remote — Miami / Cancún',
     period: 'Apr 2021 – Apr 2026',
     type: 'Full-time',
-    descriptionKey: 'expertise.experiences.1.description',
+    descriptionKey: 'expertise.experiences.0.description',
     highlights: ['Served 50+ international hotel clients', '99.2% platform uptime', '25% reduction in technical debt', 'Mentored junior developers'],
     stack: ['PHP', 'PL/SQL', 'Java', 'jQuery', 'REST APIs', 'JavaScript'],
+    hasModal: true,
+  },
+  {
+    role: 'AI Training Specialist',
+    company: 'Upwork — LBLX116 Program',
+    location: 'Remote',
+    period: 'Feb 2026 – Apr 2026',
+    type: 'Contract',
+    descriptionKey: 'expertise.experiences.1.description',
+    highlights: ['Comparative A/B model evaluation', 'Human preference feedback for LLM reasoning', 'Code quality analysis & instruction authoring'],
+    stack: ['Python', 'Model Evaluation', 'A/B Testing', 'ML Feedback Systems'],
   },
   {
     role: 'Frontend Web Developer',
@@ -52,9 +53,82 @@ const COMPETENCIES = [
   { label: 'AI / ML', items: ['Model Evaluation', 'A/B Testing', 'Human Feedback Systems', 'Code Quality Analysis'] },
 ];
 
+const RESERVHOTEL_PROJECTS_EN = [
+  {
+    title: 'Booking Engine Migration & Performance Modernization — ReservHotel / Tambourine',
+    description: 'Led the modernization of the booking engine architecture from legacy systems to React/Next.js and NestJS. Improved performance, scalability, and maintainability while preserving critical reservation workflows. Refactored legacy modules into reusable components and reduced technical debt across the platform.',
+  },
+  {
+    title: 'Travel Agency (TA) Platform Migration to MVC Architecture — ReservHotel / Tambourine',
+    description: 'Migrated the Travel Agency platform to an MVC-based PHP architecture to improve code organization and maintainability. Refactored business logic into scalable controllers, models, and views while maintaining compatibility with existing integrations and booking workflows.',
+  },
+  {
+    title: 'Booking Engine Platform — ReservHotel / Tambourine',
+    description: 'Developed and maintained core booking engine functionality for hotel clients, focusing on reservation flows, room availability, pricing logic, occupancy validation, and responsive customer experiences. Worked on frontend and backend integrations using JavaScript, jQuery, PHP, Java, and Oracle PL/SQL to support high-traffic, revenue-critical hospitality platforms.',
+  },
+  {
+    title: 'Multi-Property Hotel Customization Framework',
+    description: 'Built reusable frontend libraries and configurable booking components used across multiple hotel properties and brands. Implemented scalable customization systems for widgets, booking behavior, multilingual support, and responsive UI adaptations while maintaining consistency across client implementations.',
+  },
+  {
+    title: 'Oracle PL/SQL Reservation & Business Logic System',
+    description: 'Developed procedures, triggers, functions, and optimized SQL queries supporting hotel reservation workflows, transactional operations, pricing management, and customer booking processes. Worked extensively with Oracle PL/SQL to maintain reliability and performance in production hospitality systems.',
+  },
+  {
+    title: 'Internationalization & Multilingual Booking Experience',
+    description: 'Implemented multilingual localization support across booking interfaces and transactional messaging systems for international hospitality clients. Managed dynamic translations, localized date formatting, and language-specific content handling for English, Spanish, French, German, Portuguese, Italian, Dutch, and Polish markets.',
+  },
+  {
+    title: 'Booking Widget UX Modernization',
+    description: 'Redesigned and optimized booking widgets and customer-facing hotel interfaces to improve responsiveness, usability, and conversion-focused user experiences. Collaborated on frontend prototyping and UI improvements using JavaScript, jQuery, responsive web design practices, and Figma-based concepts.',
+  },
+  {
+    title: 'Booking Validation & Customer Flow Optimization',
+    description: 'Implemented complex validation systems for reservation flows, including occupancy rules, child age handling, dynamic pricing validation, date-range processing, and unavailable inventory management. Improved booking reliability and reduced customer-facing reservation errors across hotel platforms.',
+  },
+];
+
+const RESERVHOTEL_PROJECTS_ES = [
+  {
+    title: 'Modernización y Migración del Motor de Reservas — ReservHotel / Tambourine',
+    description: 'Lideré la modernización de la arquitectura del motor de reservas desde sistemas heredados a React/Next.js y NestJS. Mejoré rendimiento, escalabilidad y mantenibilidad mientras preservaba flujos críticos de reserva. Refactoricé módulos heredados en componentes reutilizables y reduje deuda técnica en toda la plataforma.',
+  },
+  {
+    title: 'Migración de la Plataforma de Agencias de Viajes (TA) a Arquitectura MVC — ReservHotel / Tambourine',
+    description: 'Migré la plataforma de Agencias de Viajes a una arquitectura MVC basada en PHP para mejorar la organización y mantenibilidad del código. Refactoricé la lógica empresarial en controladores, modelos y vistas escalables manteniendo compatibilidad con integraciones y flujos de reserva existentes.',
+  },
+  {
+    title: 'Plataforma de Motor de Reservas — ReservHotel / Tambourine',
+    description: 'Desarrollé y mantuve la funcionalidad principal del motor de reservas para clientes hoteleros, enfocándome en flujos de reserva, disponibilidad de habitaciones, lógica de precios, validación de ocupación y experiencias de cliente responsivas. Trabajé en integraciones frontend y backend usando JavaScript, jQuery, PHP, Java y Oracle PL/SQL para soportar plataformas hoteleras críticas de alto tráfico.',
+  },
+  {
+    title: 'Marco de Personalización Multi-Propiedad Hotelera',
+    description: 'Construí librerías frontend reutilizables y componentes de reserva configurables usados en múltiples propiedades hoteleras y marcas. Implementé sistemas de personalización escalables para widgets, comportamiento de reserva, soporte multilingüe y adaptaciones UI responsivas manteniendo consistencia en implementaciones de clientes.',
+  },
+  {
+    title: 'Sistema de Lógica de Negocio y Reservas Oracle PL/SQL',
+    description: 'Desarrollé procedimientos, triggers, funciones y consultas SQL optimizadas que soportan flujos de trabajo de reservas hoteleras, operaciones transaccionales, gestión de precios y procesos de reserva de clientes. Trabajé extensivamente con Oracle PL/SQL para mantener confiabilidad y rendimiento en sistemas hoteleros de producción.',
+  },
+  {
+    title: 'Internacionalización y Experiencia de Reserva Multilingüe',
+    description: 'Implementé soporte de localización multilingüe en interfaces de reserva y sistemas de mensajería transaccional para clientes hoteleros internacionales. Administré traducciones dinámicas, formateo de fechas localizado y manejo de contenido específico del idioma para mercados en inglés, español, francés, alemán, portugués, italiano, holandés y polaco.',
+  },
+  {
+    title: 'Modernización UX de Widgets de Reserva',
+    description: 'Rediseñé y optimicé widgets de reserva e interfaces hoteleras orientadas al cliente para mejorar responsividad, usabilidad y experiencias enfocadas en conversión. Colaboré en prototipado frontend y mejoras UI usando JavaScript, jQuery, prácticas de diseño web responsivo y conceptos basados en Figma.',
+  },
+  {
+    title: 'Validación de Reservas y Optimización de Flujo de Cliente',
+    description: 'Implementé sistemas de validación complejos para flujos de reserva, incluyendo reglas de ocupación, manejo de edad de niños, validación de precios dinámicos, procesamiento de rangos de fechas y gestión de inventario no disponible. Mejoré la confiabilidad de reservas y reduje errores de reserva orientados al cliente en plataformas hoteleras.',
+  },
+];
+
 export const ExpertiseSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeExp, setActiveExp] = React.useState(0);
+  const [showModal, setShowModal] = React.useState(false);
+
+  const RESERVHOTEL_PROJECTS = i18n.language === 'es' ? RESERVHOTEL_PROJECTS_ES : RESERVHOTEL_PROJECTS_EN;
 
   const EXPERIENCE = EXPERIENCE_BASE.map(e => ({
     ...e,
@@ -196,6 +270,24 @@ export const ExpertiseSection = () => {
           </div>
           <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: '15px', color: '#A8A49D', lineHeight: 1.65, margin: '0 0 20px' }}>
             {exp.description}
+            {exp.hasModal && (
+              <>
+                {' '}
+                <button
+                  onClick={() => setShowModal(true)}
+                  style={{
+                    background: 'none', border: 'none', color: '#C8965A',
+                    cursor: 'pointer', fontFamily: "'Outfit', sans-serif",
+                    fontSize: '15px', textDecoration: 'underline',
+                    padding: '0', transition: 'opacity 150ms ease',
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.opacity = '0.7'}
+                  onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+                >
+                  More about this →
+                </button>
+              </>
+            )}
           </p>
           <hr style={dividerStyle} />
           <div style={{ marginBottom: '20px' }}>
@@ -224,6 +316,60 @@ export const ExpertiseSection = () => {
           </div>
         ))}
       </div>
+
+      {showModal && (
+        <div style={{
+          position: 'fixed', top: 0, left: 0, right: 0, bottom: 0,
+          background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center',
+          justifyContent: 'center', zIndex: 1000, padding: '20px',
+        }} onClick={() => setShowModal(false)}>
+          <div style={{
+            background: '#0D0D0D', borderRadius: '8px',
+            maxWidth: '600px', maxHeight: '80vh', overflowY: 'auto',
+            border: '1px solid rgba(240,237,230,0.15)', padding: '40px',
+            position: 'relative',
+          }} onClick={e => e.stopPropagation()}>
+            <button
+              onClick={() => setShowModal(false)}
+              style={{
+                position: 'absolute', top: '20px', right: '20px',
+                background: 'none', border: 'none', color: '#A8A49D',
+                cursor: 'pointer', fontSize: '24px', lineHeight: 1,
+              }}
+            >
+              ✕
+            </button>
+            <h3 style={{
+              fontFamily: "'DM Serif Display', serif", fontSize: '28px',
+              color: '#F0EDE6', marginBottom: '32px', paddingRight: '40px',
+            }}>
+              {i18n.language === 'es' ? 'Mi trabajo en ReservHotel' : 'My work at ReservHotel'}
+            </h3>
+            {RESERVHOTEL_PROJECTS.map((project, i) => (
+              <div key={i} style={{ marginBottom: i < RESERVHOTEL_PROJECTS.length - 1 ? '32px' : '0' }}>
+                <h4 style={{
+                  fontFamily: "'Outfit', sans-serif", fontSize: '14px',
+                  fontWeight: 600, color: '#F0EDE6', marginBottom: '10px',
+                }}>
+                  {project.title}
+                </h4>
+                <p style={{
+                  fontFamily: "'Outfit', sans-serif", fontSize: '14px',
+                  color: '#A8A49D', lineHeight: 1.6, margin: '0 0 16px',
+                }}>
+                  {project.description}
+                </p>
+                {i < RESERVHOTEL_PROJECTS.length - 1 && (
+                  <hr style={{
+                    border: 'none', borderTop: '1px solid rgba(240,237,230,0.07)',
+                    margin: '0',
+                  }} />
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
