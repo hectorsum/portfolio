@@ -21,6 +21,21 @@ const PROJECTS_BASE = [
   },
   {
     id: 2,
+    title: 'RAG Document System',
+    type: 'Featured',
+    year: '2025',
+    descriptionKey: 'projectData.ragDocument',
+    stack: ['Next.js', 'NestJS', 'TypeScript', 'Pinecone', 'Claude', 'React'],
+    thumbBg: '#0D1120',
+    url: 'https://rag-document-system.vercel.app/login',
+    images: [
+      '/RAG-document/RAG1.webp',
+      '/RAG-document/RAG2.webp',
+      '/RAG-document/RAG3.webp',
+    ],
+  },
+  {
+    id: 3,
     title: 'Harike',
     type: 'Freelance',
     year: '2023',
@@ -29,7 +44,7 @@ const PROJECTS_BASE = [
     thumbBg: '#131009',
   },
   {
-    id: 3,
+    id: 4,
     title: 'DKelly',
     type: 'Freelance',
     year: '2023',
@@ -38,7 +53,7 @@ const PROJECTS_BASE = [
     thumbBg: '#0D0F13',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Revuelo Arts',
     type: 'Freelance',
     year: '2022',
@@ -56,7 +71,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: 'GoLManager',
     type: 'Freelance',
     year: '2023',

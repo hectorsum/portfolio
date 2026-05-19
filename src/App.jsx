@@ -21,6 +21,15 @@ const PROJECTS_BASE = [
   },
   {
     id: 2,
+    title: 'RAG Document System',
+    type: 'Featured',
+    year: '2025',
+    descriptionKey: 'projectData.ragDocument',
+    stack: ['Next.js', 'NestJS', 'TypeScript', 'Pinecone', 'Claude', 'React'],
+    thumbBg: '#0D1120',
+  },
+  {
+    id: 3,
     title: 'Harike',
     type: 'Freelance',
     year: '2023',
@@ -29,7 +38,7 @@ const PROJECTS_BASE = [
     thumbBg: '#131009',
   },
   {
-    id: 3,
+    id: 4,
     title: 'DKelly',
     type: 'Freelance',
     year: '2023',
