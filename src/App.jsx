@@ -18,6 +18,12 @@ const PROJECTS_BASE = [
     descriptionKey: 'projectData.formaSalud',
     stack: ['React', 'TypeScript', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JWT'],
     thumbBg: '#0F1410',
+    images: [
+      '/FormaTuSalud/FormaTuSalud.webp',
+      '/FormaTuSalud/FormaTuSalud2.webp',
+      '/FormaTuSalud/FormaTuSalud3.webp',
+      '/FormaTuSalud/FormaTuSalud4.webp',
+    ],
   },
   {
     id: 2,
@@ -27,6 +33,11 @@ const PROJECTS_BASE = [
     descriptionKey: 'projectData.ragDocument',
     stack: ['Next.js', 'NestJS', 'TypeScript', 'Pinecone', 'Claude', 'React'],
     thumbBg: '#0D1120',
+    images: [
+      '/RAG-document/RAG1.webp',
+      '/RAG-document/RAG2.webp',
+      '/RAG-document/RAG3.webp',
+    ],
   },
   {
     id: 3,
