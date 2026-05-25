@@ -116,10 +116,10 @@ const HeroSection = ({ setPage }) => {
           ))}
         </div>
       </div>
-      <div style={scrollHintStyle}>
+      {/* <div style={scrollHintStyle}>
         <span style={{ width: '20px', height: '1px', background: '#3A3A3A', display: 'inline-block' }}></span>
         scroll to explore
-      </div>
+      </div> */}
     </div>
   );
 };
