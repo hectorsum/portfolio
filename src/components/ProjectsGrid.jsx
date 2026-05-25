@@ -5,9 +5,54 @@ import { ProjectCard } from './ProjectCard';
 const PROJECTS_BASE = [
   {
     id: 1,
+    title: 'ReservHotel by Tambourine',
+    type: 'Company',
+    year: '2021-2026',
+    descriptionKey: 'projectData.reservhotel',
+    stack: ['JavaScript', 'PL/SQL', 'PHP', 'Java', 'MVC', 'JWT', 'React', 'Next.js', 'NestJS'],
+    thumbBg: '#0D1410',
+    url: 'http://reservhotel.com/win/owa/ibe5.main?hotel=15000',
+    images: [
+      '/ReservHotelByTambourine/ReservHotelByTambourine.webp',
+    ],
+  },
+  {
+    id: 2,
+    title: 'RAG Document System',
+    type: 'Featured',
+    year: '2026',
+    descriptionKey: 'projectData.ragDocument',
+    stack: ['Next.js', 'NestJS', 'TypeScript', 'Pinecone', 'Claude', 'React'],
+    thumbBg: '#0D1120',
+    url: 'https://rag-document-system.vercel.app/login',
+    images: [
+      '/RAG-document/RAG2.webp',
+      '/RAG-document/RAG3.webp',
+      '/RAG-document/RAG1.webp',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Dra Nash',
+    type: 'Featured',
+    year: '2026',
+    descriptionKey: 'projectData.draNash',
+    stack: ['React 19', 'Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'JWT'],
+    thumbBg: '#0D1018',
+    url: 'https://dra-nash.vercel.app/',
+    images: [
+      '/DraNash/DraNash.webp',
+      '/DraNash/DraNash2.webp',
+      '/DraNash/DraNash3.webp',
+      '/DraNash/DraNash4.webp',
+      '/DraNash/DraNash5.webp',
+    ],
+  },
+  {
+    id: 4,
     title: 'FormaTuSalud',
     type: 'Featured',
-    year: '2024',
+    year: '2026',
     descriptionKey: 'projectData.formaSalud',
     stack: ['React', 'TypeScript', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JWT'],
     thumbBg: '#0F1410',
@@ -20,53 +65,20 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 2,
-    title: 'RAG Document System',
-    type: 'Featured',
-    year: '2025',
-    descriptionKey: 'projectData.ragDocument',
-    stack: ['Next.js', 'NestJS', 'TypeScript', 'Pinecone', 'Claude', 'React'],
-    thumbBg: '#0D1120',
-    url: 'https://rag-document-system.vercel.app/login',
-    images: [
-      '/RAG-document/RAG1.webp',
-      '/RAG-document/RAG2.webp',
-      '/RAG-document/RAG3.webp',
-    ],
-  },
-  {
-    id: 3,
-    title: 'Dra Nash',
-    type: 'Featured',
-    year: '2026',
-    descriptionKey: 'projectData.draNash',
-    stack: ['React 19', 'Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'JWT'],
-    thumbBg: '#0D1018',
-    images: [
-      '/DraNash/DraNash.webp',
-      '/DraNash/DraNash2.webp',
-      '/DraNash/DraNash3.webp',
-      '/DraNash/DraNash4.webp',
-      '/DraNash/DraNash5.webp',
-    ],
-  },
-  {
-    id: 4,
-    title: 'Harike',
-    type: 'Freelance',
-    year: '2023',
-    descriptionKey: 'projectData.harike',
-    stack: ['React', 'Redux', 'Chakra UI', 'Node.js', 'MongoDB', 'Socket.io'],
-    thumbBg: '#131009',
-  },
-  {
     id: 5,
-    title: 'DKelly',
-    type: 'Freelance',
+    title: 'GoLManager',
+    type: 'Company',
     year: '2023',
-    descriptionKey: 'projectData.dkelly',
-    stack: ['React', 'TypeScript', 'Redux', 'Chakra UI', 'Node.js', 'MongoDB'],
-    thumbBg: '#0D0F13',
+    descriptionKey: 'projectData.golmanager',
+    stack: ['React', 'TypeScript', 'Figma', 'React Native', 'Symfony', 'PHP'],
+    thumbBg: '#0F1208',
+    url: 'https://web.golmanager.app/',
+    images: [
+      '/GolManager/GolManager.webp',
+      '/GolManager/GolManager2.webp',
+      '/GolManager/GolManager3.webp',
+      '/GolManager/GolManager4.webp',
+    ],
   },
   {
     id: 6,
@@ -88,23 +100,25 @@ const PROJECTS_BASE = [
   },
   {
     id: 7,
-    title: 'GoLManager',
+    title: 'Harike',
     type: 'Freelance',
-    year: '2023',
-    descriptionKey: 'projectData.golmanager',
-    stack: ['React', 'TypeScript', 'Figma', 'React Native', 'Symfony', 'PHP'],
-    thumbBg: '#0F1208',
-    url: 'https://web.golmanager.app/',
-    images: [
-      '/GolManager/GolManager.webp',
-      '/GolManager/GolManager2.webp',
-      '/GolManager/GolManager3.webp',
-      '/GolManager/GolManager4.webp',
-    ],
+    year: '2022',
+    descriptionKey: 'projectData.harike',
+    stack: ['React', 'Redux', 'Chakra UI', 'Node.js', 'MongoDB', 'Socket.io'],
+    thumbBg: '#131009',
+  },
+  {
+    id: 8,
+    title: 'DKelly',
+    type: 'Freelance',
+    year: '2022',
+    descriptionKey: 'projectData.dkelly',
+    stack: ['React', 'TypeScript', 'Redux', 'Chakra UI', 'Node.js', 'MongoDB'],
+    thumbBg: '#0D0F13',
   },
 ];
 
-const FILTERS = ['all', 'featured', 'freelance'];
+const FILTERS = ['all', 'featured', 'company', 'freelance'];
 
 export const ProjectsGrid = ({ setPage }) => {
   const { t } = useTranslation();
@@ -182,7 +196,7 @@ export const ProjectsGrid = ({ setPage }) => {
         <p style={bodyStyle}>{t('projects.description')}</p>
       </div>
       <div style={filterRowStyle}>
-        {['all', 'featured', 'freelance'].map(f => (
+        {FILTERS.map(f => (
           <button key={f} style={filterBtnStyle(filter === f)} onClick={() => setFilter(f)}>
             {t(`projects.filter${f.charAt(0).toUpperCase() + f.slice(1)}`)}
           </button>

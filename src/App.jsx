@@ -12,17 +12,14 @@ import { Footer } from './components/Footer';
 const PROJECTS_BASE = [
   {
     id: 1,
-    title: 'FormaTuSalud',
-    type: 'Featured',
-    year: '2026',
-    descriptionKey: 'projectData.formaSalud',
-    stack: ['React', 'TypeScript', 'Next.js', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JWT'],
-    thumbBg: '#0F1410',
+    title: 'ReservHotel by Tambourine',
+    type: 'Company',
+    year: '2021-2026',
+    descriptionKey: 'projectData.reservhotel',
+    stack: ['JavaScript', 'PL/SQL', 'PHP', 'Java', 'MVC', 'JWT', 'React', 'Next.js', 'NestJS'],
+    thumbBg: '#0D1410',
     images: [
-      '/FormaTuSalud/FormaTuSalud.webp',
-      '/FormaTuSalud/FormaTuSalud2.webp',
-      '/FormaTuSalud/FormaTuSalud3.webp',
-      '/FormaTuSalud/FormaTuSalud4.webp',
+      '/ReservHotelByTambourine/ReservHotelByTambourine.webp',
     ],
   },
   {
@@ -41,6 +38,21 @@ const PROJECTS_BASE = [
   },
   {
     id: 3,
+    title: 'FormaTuSalud',
+    type: 'Featured',
+    year: '2026',
+    descriptionKey: 'projectData.formaSalud',
+    stack: ['React', 'TypeScript', 'Next.js', 'Redux', 'Node.js', 'Express', 'MongoDB', 'JWT'],
+    thumbBg: '#0F1410',
+    images: [
+      '/FormaTuSalud/FormaTuSalud.webp',
+      '/FormaTuSalud/FormaTuSalud2.webp',
+      '/FormaTuSalud/FormaTuSalud3.webp',
+      '/FormaTuSalud/FormaTuSalud4.webp',
+    ],
+  },
+  {
+    id: 4,
     title: 'Dra Nash',
     type: 'Featured',
     year: '2026',
@@ -56,7 +68,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Harike',
     type: 'Freelance',
     year: '2022',
@@ -65,7 +77,7 @@ const PROJECTS_BASE = [
     thumbBg: '#131009',
   },
   {
-    id: 5,
+    id: 6,
     title: 'DKelly',
     type: 'Freelance',
     year: '2022',

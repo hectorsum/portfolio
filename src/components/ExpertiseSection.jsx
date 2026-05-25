@@ -3,14 +3,15 @@ import { useTranslation } from 'react-i18next';
 
 const EXPERIENCE_BASE = [
   {
-    role: 'Full Stack Web Developer',
+    role: 'Frontend Web Developer',
     company: 'Reservhotel by Tambourine',
     location: 'Remote — Miami / Cancún',
     period: 'Apr 2021 – Apr 2026',
     type: 'Full-time',
     descriptionKey: 'expertise.experiences.0.description',
     highlights: ['Served 50+ international hotel clients', '99.2% platform uptime', '25% reduction in technical debt', 'Mentored junior developers'],
-    stack: ['PHP', 'PL/SQL', 'Java', 'jQuery', 'REST APIs', 'JavaScript'],
+    stack: ['JavaScript', 'PL/SQL', 'PHP', 'Java', 'MVC', 'JWT', 'React', 'Next.js', 'NestJS'],
+    logo: '/CompanyLogos/Tambourine.jpeg',
     hasModal: true,
   },
   {
@@ -22,6 +23,7 @@ const EXPERIENCE_BASE = [
     descriptionKey: 'expertise.experiences.1.description',
     highlights: ['Comparative A/B model evaluation', 'Human preference feedback for LLM reasoning', 'Code quality analysis & instruction authoring'],
     stack: ['Python', 'Model Evaluation', 'A/B Testing', 'ML Feedback Systems'],
+    logo: '/CompanyLogos/Upwork.jpeg',
   },
   {
     role: 'Frontend Web Developer',
@@ -32,6 +34,7 @@ const EXPERIENCE_BASE = [
     descriptionKey: 'expertise.experiences.2.description',
     highlights: ['5,000+ active users', 'Figma → React pixel-perfect delivery', 'Cross-platform feature parity with React Native'],
     stack: ['React', 'TypeScript', 'Redux', 'TailwindCSS', 'Figma', 'React Native'],
+    logo: '/CompanyLogos/GolManager.png',
   },
   {
     role: 'Full Stack Developer',
@@ -42,6 +45,18 @@ const EXPERIENCE_BASE = [
     descriptionKey: 'expertise.experiences.3.description',
     highlights: ['30% dev efficiency increase via reusable hooks', 'Mobile-first responsive applications', 'Scalable full-stack architecture'],
     stack: ['React', 'Node.js', 'Express', 'TypeScript', 'MongoDB', 'PostgreSQL'],
+    logo: '/CompanyLogos/Fulltimeforce.jpeg',
+  },
+  {
+    role: 'Support Analyst',
+    company: 'Synopsis S.A.',
+    location: 'Lima Metropolitan Area',
+    period: 'Feb 2020 – Apr 2020',
+    type: 'Full-time',
+    descriptionKey: 'expertise.experiences.4.description',
+    highlights: ['RedHat distribution training and certification training', 'JBoss Servers management training', 'System administration support'],
+    stack: ['Linux', 'RedHat', 'JBoss'],
+    logo: '/CompanyLogos/Synopsis.jpeg',
   },
 ];
 
@@ -251,12 +266,21 @@ export const ExpertiseSection = () => {
       <div style={gridStyle}>
         <div style={{ borderRight: '1px solid rgba(240,237,230,0.07)' }}>
           {EXPERIENCE.map((e, i) => (
-            <div key={i} style={tabStyle(activeExp === i)} onClick={() => setActiveExp(i)}
+            <div key={i} style={{ ...tabStyle(activeExp === i), display: 'flex', gap: '12px', alignItems: 'flex-start' }} onClick={() => setActiveExp(i)}
               onMouseEnter={ev => { if (activeExp !== i) ev.currentTarget.style.background = '#141414'; }}
               onMouseLeave={ev => { if (activeExp !== i) ev.currentTarget.style.background = '#111111'; }}>
-              <div style={{ ...tabCompany, color: activeExp === i ? '#F0EDE6' : '#A8A49D' }}>{e.company}</div>
-              <div style={tabRole}>{e.role}</div>
-              <div style={tabPeriod}>{e.period}</div>
+              {e.logo && (
+                <img
+                  src={e.logo}
+                  alt={e.company}
+                  style={{ width: '40px', height: '40px', objectFit: 'contain', flexShrink: 0 }}
+                />
+              )}
+              <div>
+                <div style={{ ...tabCompany, color: activeExp === i ? '#F0EDE6' : '#A8A49D' }}>{e.company}</div>
+                <div style={tabRole}>{e.role}</div>
+                <div style={tabPeriod}>{e.period}</div>
+              </div>
             </div>
           ))}
         </div>
@@ -301,6 +325,39 @@ export const ExpertiseSection = () => {
           <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
             {exp.stack.map(s => <span key={s} style={tagStyle}>{s}</span>)}
           </div>
+          {exp.company === 'Reservhotel by Tambourine' && (
+            <div style={{ marginTop: '20px' }}>
+              <a
+                href='/Hector_Herrera_Letter_of_Recommendation_Diego_Perez.pdf'
+                download
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontFamily: "'Outfit', sans-serif",
+                  fontSize: '13px',
+                  color: '#C8965A',
+                  textDecoration: 'none',
+                  padding: '8px 12px',
+                  border: '1px solid rgba(200,150,90,0.3)',
+                  borderRadius: '4px',
+                  transition: 'all 150ms ease',
+                  cursor: 'pointer',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = 'rgba(200,150,90,0.08)';
+                  e.currentTarget.style.borderColor = 'rgba(200,150,90,0.5)';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = 'transparent';
+                  e.currentTarget.style.borderColor = 'rgba(200,150,90,0.3)';
+                }}
+              >
+                <i className="fas fa-file-pdf" style={{ fontSize: '14px' }}></i>
+                Letter of Recommendation
+              </a>
+            </div>
+          )}
         </div>
       </div>
 
