@@ -108,7 +108,7 @@ const HeroSection = ({ setPage }) => {
           </button>
         </div>
         <div style={statsStyle}>
-          {[['5+', 'years experience'], ['4', 'products shipped'], ['50+', 'hotel clients served']].map(([n, l]) => (
+          {[['5+', 'years experience'], ['50+', 'hotel clients served']].map(([n, l]) => (
             <div key={l} style={statStyle}>
               <span style={statNumStyle}>{n}</span>
               <span style={statLabelStyle}>{l}</span>
