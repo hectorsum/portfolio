@@ -48,6 +48,7 @@
     "images": [],
     "formaSalud": "Clinic platform redesign enabling patients to schedule and pay for appointments, while providing doctors with tools to manage patient history, prescriptions, and schedules in real-time.",
     "ragDocument": "Full-stack RAG application allowing users to upload PDFs and ask AI-powered questions grounded in document content. Built with Next.js frontend, NestJS backend, Pinecone vector database, and Claude AI for intelligent document understanding.",
+    "draNash": "Full-stack dental practice platform featuring appointment booking, clinical records management, patient dashboards, and PDF invoice generation. Built with React 19, Next.js, TypeScript, Tailwind CSS, PostgreSQL, and Prisma ORM with JWT-based authentication.",
     "harike": "Real-time food ordering platform for restaurant chains managing multi-location operations. 35% reduction in order processing time via Socket.io sync.",
     "dkelly": "Inventory and staff management system for an ice cream franchise — real-time stock tracking and role-based access across 15+ locations.",
     "revuelo": "Responsive website and CMS for a Latin American theater company — customizable content management and contact system. 1,000+ monthly visitors.",

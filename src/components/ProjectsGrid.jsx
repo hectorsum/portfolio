@@ -36,6 +36,22 @@ const PROJECTS_BASE = [
   },
   {
     id: 3,
+    title: 'Dra Nash',
+    type: 'Featured',
+    year: '2026',
+    descriptionKey: 'projectData.draNash',
+    stack: ['React 19', 'Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'JWT'],
+    thumbBg: '#0D1018',
+    images: [
+      '/DraNash/DraNash.webp',
+      '/DraNash/DraNash2.webp',
+      '/DraNash/DraNash3.webp',
+      '/DraNash/DraNash4.webp',
+      '/DraNash/DraNash5.webp',
+    ],
+  },
+  {
+    id: 4,
     title: 'Harike',
     type: 'Freelance',
     year: '2023',
@@ -44,7 +60,7 @@ const PROJECTS_BASE = [
     thumbBg: '#131009',
   },
   {
-    id: 4,
+    id: 5,
     title: 'DKelly',
     type: 'Freelance',
     year: '2023',
@@ -53,7 +69,7 @@ const PROJECTS_BASE = [
     thumbBg: '#0D0F13',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Revuelo Arts',
     type: 'Freelance',
     year: '2022',
@@ -71,7 +87,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: 'GoLManager',
     type: 'Freelance',
     year: '2023',
