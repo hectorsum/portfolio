@@ -31,9 +31,9 @@ const PROJECTS_BASE = [
     stack: ['Next.js', 'NestJS', 'TypeScript', 'Pinecone', 'Claude', 'React'],
     thumbBg: '#0D1120',
     images: [
-      '/RAG-document/RAG1.webp',
       '/RAG-document/RAG2.webp',
       '/RAG-document/RAG3.webp',
+      '/RAG-document/RAG1.webp',
     ],
   },
   {
