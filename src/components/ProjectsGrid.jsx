@@ -111,7 +111,7 @@ const PROJECTS_BASE = [
     id: 8,
     title: 'DKelly',
     type: 'Freelance',
-    year: '2022',
+    year: '2021',
     descriptionKey: 'projectData.dkelly',
     stack: ['React', 'TypeScript', 'Redux', 'Chakra UI', 'Node.js', 'MongoDB'],
     thumbBg: '#0D0F13',
