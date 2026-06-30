@@ -11,6 +11,25 @@ import { Footer } from './components/Footer';
 
 const PROJECTS_BASE = [
   {
+    id: 0,
+    title: 'Interser',
+    type: 'Featured',
+    year: '2026',
+    descriptionKey: 'projectData.interser',
+    stack: ['Next.js', 'TypeScript', 'Supabase', 'JWT', 'Vercel'],
+    thumbBg: '#0D1110',
+    url: 'https://interser.vercel.app',
+    images: [
+      '/Interser/Interser7.webp',
+      '/Interser/Interser6.webp',
+      '/Interser/Interser.webp',
+      '/Interser/Interser2.webp',
+      '/Interser/Interser3.webp',
+      '/Interser/Interser4.webp',
+      '/Interser/Interser5.webp',
+    ],
+  },
+  {
     id: 1,
     title: 'ReservHotel by Tambourine',
     type: 'Company',
@@ -137,12 +156,10 @@ const FeaturedProjects = ({ setPage }) => {
 };
 
 function App() {
-  const saved = (() => { try { return localStorage.getItem('hh_page') || 'home'; } catch { return 'home'; } })();
-  const [page, setPageRaw] = React.useState(saved);
+  const [page, setPageRaw] = React.useState('home');
 
   const setPage = (p) => {
     setPageRaw(p);
-    try { localStorage.setItem('hh_page', p); } catch { }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

@@ -45,6 +45,7 @@
     "cta": "Contáctame →"
   },
   "projectData": {
+    "interser": "Plataforma web desarrollada para una consultora independiente, con landing page público y dashboard privado para administrar pacientes, sesiones y pagos, incluyendo seguimiento de recibos por honorarios y reportes financieros automatizados.",
     "formaSalud": "Rediseño de plataforma clínica permitiendo a pacientes agendar y pagar citas, mientras proporciona a médicos herramientas para gestionar historial de pacientes, prescripciones y horarios en tiempo real.",
     "ragDocument": "Aplicación RAG full-stack permitiendo a usuarios subir PDFs y hacer preguntas impulsadas por IA fundamentadas en contenido de documentos. Construida con frontend Next.js, backend NestJS, base de datos vectorial Pinecone e IA Claude para comprensión inteligente de documentos.",
     "harike": "Plataforma de pedidos de comida en tiempo real para cadenas de restaurantes que manejan operaciones en múltiples ubicaciones. Reducción del 35% en el tiempo de procesamiento de pedidos vía sincronización Socket.io.",

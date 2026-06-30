@@ -5,6 +5,25 @@ import { ProjectCard } from './ProjectCard';
 const PROJECTS_BASE = [
   {
     id: 1,
+    title: 'Interser',
+    type: 'Featured',
+    year: '2026',
+    descriptionKey: 'projectData.interser',
+    stack: ['Next.js', 'TypeScript', 'Supabase', 'JWT', 'Vercel'],
+    thumbBg: '#0D1110',
+    url: 'https://interser.vercel.app',
+    images: [
+      '/Interser/Interser7.webp',
+      '/Interser/Interser6.webp',
+      '/Interser/Interser.webp',
+      '/Interser/Interser2.webp',
+      '/Interser/Interser3.webp',
+      '/Interser/Interser4.webp',
+      '/Interser/Interser5.webp',
+    ],
+  },
+  {
+    id: 2,
     title: 'ReservHotel by Tambourine',
     type: 'Company',
     year: '2021-2026',
@@ -17,7 +36,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'RAG Document System',
     type: 'Featured',
     year: '2026',
@@ -32,7 +51,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Dra Nash',
     type: 'Featured',
     year: '2026',
@@ -49,7 +68,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: 'FormaTuSalud',
     type: 'Featured',
     year: '2026',
@@ -65,7 +84,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: 'GoLManager',
     type: 'Company',
     year: '2023',
@@ -81,7 +100,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: 'Revuelo Arts',
     type: 'Freelance',
     year: '2022',
@@ -99,7 +118,7 @@ const PROJECTS_BASE = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: 'Harike',
     type: 'Freelance',
     year: '2022',
@@ -108,7 +127,7 @@ const PROJECTS_BASE = [
     thumbBg: '#131009',
   },
   {
-    id: 8,
+    id: 9,
     title: 'DKelly',
     type: 'Freelance',
     year: '2021',

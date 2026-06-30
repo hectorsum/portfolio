@@ -47,6 +47,7 @@
   },
   "projectData": {
     "images": [],
+    "interser": "Web platform built for an independent consultant, featuring a public landing page and a private dashboard to manage patients, sessions, and payments — including fee receipt tracking and automated financial reports.",
     "formaSalud": "Clinic platform redesign enabling patients to schedule and pay for appointments, while providing doctors with tools to manage patient history, prescriptions, and schedules in real-time.",
     "ragDocument": "Full-stack RAG application allowing users to upload PDFs and ask AI-powered questions grounded in document content. Built with Next.js frontend, NestJS backend, Pinecone vector database, and Claude AI for intelligent document understanding.",
     "draNash": "Full-stack dental practice platform featuring appointment booking, clinical records management, patient dashboards, and PDF invoice generation. Built with React 19, Next.js, TypeScript, Tailwind CSS, PostgreSQL, and Prisma ORM with JWT-based authentication.",
