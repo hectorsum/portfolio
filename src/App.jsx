@@ -18,7 +18,7 @@ const PROJECTS_BASE = [
     descriptionKey: 'projectData.interser',
     stack: ['Next.js', 'TypeScript', 'Supabase', 'JWT', 'Vercel'],
     thumbBg: '#0D1110',
-    url: 'https://interser-beta.vercel.app',
+    url: 'https://interser.app',
     images: [
       '/Interser/Interser7.webp',
       '/Interser/Interser6.webp',
